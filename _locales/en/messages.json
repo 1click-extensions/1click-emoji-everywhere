@@ -1,7 +1,7 @@
 {
-  "browser_action": {"message": "Use emoji" },
+  "browser_action": {"message": "Use emojies" },
   "message": {"message": "Now you can paste the emuji eveywhere" },
-  "ext_desc": {"message": "Use emoji everywhere on web" },
+  "ext_desc": {"message": "Use emojies everywhere on web" },
   "ext_name": {"message": "1click Emoji Everywhere" }
 }
 

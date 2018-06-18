@@ -23,21 +23,23 @@ window.emujiTabs = {
         hash :':hash:',
 
     }
-if('undefined' == typeof emujiedAlready){
-    emujiedAlready = true;
-    //document.body.innerHTML += '<div style="position:relative"><input type="text"></div>';
-    lastFocused = null;
-    var textAreas = document.querySelectorAll('textarae:not(.emujied'),
-        inputs = document.querySelectorAll('input[type="text"]:not(.emujied)');
-    Array.prototype.forEach.call(textAreas, function(textArea, i){
-        bindInputs(textAreas);
-    });
 
-    Array.prototype.forEach.call(inputs, function(input, i){
-        bindInputs(input);
-    });
+function bindAllInputs(){
+    if('undefined' == typeof emujiedAlready){
+        emujiedAlready = true;
+        //document.body.innerHTML += '<div style="position:relative"><input type="text"></div>';
+        lastFocused = null;
+        var textAreas = document.querySelectorAll('textarae:not(.emujied'),
+            inputs = document.querySelectorAll('input[type="text"]:not(.emujied)');
+        Array.prototype.forEach.call(textAreas, function(textArea, i){
+            bindInputs(textAreas);
+        });
+    
+        Array.prototype.forEach.call(inputs, function(input, i){
+            bindInputs(input);
+        });
+    }
 }
-
 
 function selectTab(par, name){
     var selected = par.getElementsByClassName('emuji-box-part-' + name);

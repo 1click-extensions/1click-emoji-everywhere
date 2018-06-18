@@ -1,3 +1,4 @@
+bindAllInputs();
 chrome.runtime.sendMessage({
     action: 'addEmujies',
 });
