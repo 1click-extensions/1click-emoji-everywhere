@@ -1,6 +1,6 @@
-# <a href="https://1ce.org/1click-about-us">1CE - </a>
+# <a href="https://1ce.org/1click-emoji-everywhere">1CE - 1Click Emoji Everywhere</a>
 
-
+The easiest and fastest way to use emojies anywhere on the Web""This extension is an open-source 📰 extension. What is it mean for you:""☑ It's mean it's safe. Everyone can inspect the source code."☑ It's mean that if you're are a developer or intern your more than welcome to contribute code.""This extension is another extension of 1ce. Our mission is to advance open-source extensions."Visit our website to learn more, and be part of the community: https://1ce.org"""If you have a question, visit the FAQ section on our website: https://1ce.org""Usage Guide:""1. Install the extension (Click on the "Add to Chrome")"2. Click on the extension icon (After you install it)."3. In the box that opens, click emojie."4. If you are in the middle of writing, the emoji will be copied to the text box. If not, you can paste it (CTRL + V)""""For more instruction visit the website: https://1ce.org"""Permissions explain:""No additionals permissions!""We don't use this permission to anything else.""Data Usage:""We do not record any of your data usage. Everything stay private on your machine, until your decide you want to share it. 
 
 ---
 
@@ -11,6 +11,15 @@
 
 -This extension is another extension of 1ce. Our mission is to advance open-source extensions.
 -Visit our website to learn more, and be part of the community: <a href="https://1ce.org">1CE</a>
+
+
+
+## Screenshots
+
+<a href="https://1ce.org/1click-emoji-everywhere">
+<img src="https://1ce.org/screenshots/1click-emoji-everywhere-1.png" />
+</a>
+To view more screenshot please visit <a href="https://1ce.org">1CE - 1Click 1Click Emoji Everywhere</a> website.
 
 
 
@@ -32,7 +41,7 @@
 
 ## Installation
 
-The easiet way to install the plugin, is going to [1CE -  website](https://1ce.org/1click-about-us), and then add it to chrome.
+The easiet way to install the plugin, is going to [1CE - 1Click Emoji Everywhere website](https://1ce.org/1click-emoji-everywhere), and then add it to chrome.
 
 ## Developing
 
@@ -68,7 +77,7 @@ By being a sponsor, you will be listen here and in all our extensions and on our
 
 ## Video demonstration of usage
 
-<a href="https://1ce.org/1click-about-us/video">
+<a href="https://1ce.org/1click-emoji-everywhere/video">
 Visit the video section in the website.
 </a>
 

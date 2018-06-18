@@ -4,9 +4,9 @@ function oneClickGetPopupHtml(extension) {
   	extension = _extension;
   }
  
-//   mail = `1click-about-us@1ce.org`,
-//   	rateLink = `https://chrome.google.com/webstore/detail/abbgaomcmgneijcdbmgndmekpdknpinl/reviews`,
-// 	  githubLink = `https://github.com/1click-extensions/1click-about-us`;
+//   mail = `1click-emoji-everywhere@1ce.org`,
+//   	rateLink = `https://chrome.google.com/webstore/detail/nfadmchhfglmdpfdhadlekmjcgkopnkl/reviews`,
+// 	  githubLink = `https://github.com/1click-extensions/1click-emoji-everywhere`;
 // 	console.log(extension);
   return str = `
   <style>
@@ -111,14 +111,14 @@ button.btn-popup.no-thanks {
 
 		<div class="please-rate-text">
 			To advance the open-source world, and to give us motivation, 
-			If you like 1Click About Us <br/><a target=_blank href="https://chrome.google.com/webstore/detail/abbgaomcmgneijcdbmgndmekpdknpinl/reviews" >please give us 5-stars</a>
+			If you like 1Click Emoji Everywhere <br/><a target=_blank href="https://chrome.google.com/webstore/detail/nfadmchhfglmdpfdhadlekmjcgkopnkl/reviews" >please give us 5-stars</a>
 			<br/>
 			<div class="addition">
-				In addition, If you want to report a bug, or you have a recommendation, please <a href="https://github.com/1click-extensions/1click-about-us">report a public issue</a> or  <a href="mailto:1click-about-us@1ce.org">Contact us</a>
+				In addition, If you want to report a bug, or you have a recommendation, please <a href="https://github.com/1click-extensions/1click-emoji-everywhere">report a public issue</a> or  <a href="mailto:1click-emoji-everywhere@1ce.org">Contact us</a>
 			</div>
 			<div class="skip-wrp"><button type="button" class="btn-popup no-thanks ">Skip</button></div>
 		</div>
-		<a class="please-rate-github" href="https://github.com/1click-extensions/1click-about-us">Fork on github</a>
+		<a class="please-rate-github" href="https://github.com/1click-extensions/1click-emoji-everywhere">Fork on github</a>
 	</div>
 	`
 
