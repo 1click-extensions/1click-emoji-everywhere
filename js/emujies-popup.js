@@ -22,8 +22,11 @@ Array.prototype.forEach.call(buttons, function(button, i){
         var emuji = this.innerText.replace(/\n/,'');
         chrome.tabs.query({currentWindow: true, active: true}, function (tabs){
             var activeTab = tabs[0];
-            console.log(activeTab)
+            //console.log(activeTab)
             chrome.tabs.sendMessage(activeTab.id, {action: 'emujiSelect',emuji : emuji});
+            setTimeout(function(){
+                chrome.runtime.sendMessage( {action: 'injectJs'});
+            },5000);
         });
         // chrome.runtime.sendMessage({
         //     action: 'emujiSelect',
