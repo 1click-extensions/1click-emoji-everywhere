@@ -23,10 +23,20 @@ window.emujiTabs = {
         hash :':hash:',
 
     }
-
+if('undefined' == typeof emujiedAlready){
+    emujiedAlready = true;
+    chrome.runtime.onMessage.addListener(function(message){
+        if('emujiSelect' == message.action){
+            if(document.activeElement){
+                //console.log(message.emuji,document.activeElement);
+                insertAtCursor(document.activeElement, message.emuji)
+            }
+        }
+    });
+}
 function bindAllInputs(){
-    if('undefined' == typeof emujiedAlready){
-        emujiedAlready = true;
+    if('undefined' == typeof inputsEmujiedAlready){
+        inputsEmujiedAlready = true;
         //document.body.innerHTML += '<div style="position:relative"><input type="text"></div>';
         lastFocused = null;
         var textAreas = document.querySelectorAll('textarae:not(.emujied'),
@@ -247,14 +257,7 @@ function wrap(el, wrapper) {
     //console.log(el, wrapper)
 }
 //
-chrome.runtime.onMessage.addListener(function(message){
-    if('emujiSelect' == message.action){
-        if(document.activeElement){
-            //console.log(message.emuji,document.activeElement);
-            insertAtCursor(document.activeElement, message.emuji)
-        }
-    }
-});
+
 
 function converToReadableName(str){
     var strArr = str.split('_'),
