@@ -24,9 +24,11 @@ window.emujiTabs = {
 
     }
 if('undefined' == typeof emujiedAlready){
+    console.log('bound');
     emujiedAlready = true;
     chrome.runtime.onMessage.addListener(function(message){
         if('emujiSelect' == message.action){
+            //console.log('emujiSelect', document.activeElement);
             if(document.activeElement){
                 //console.log(message.emuji,document.activeElement);
                 insertAtCursor(document.activeElement, message.emuji)
@@ -74,18 +76,19 @@ function hideTabs(par){
 function copySelected(par, str){
     var newValue = str.replace(/\n/,''),
         toCopy = par.getElementsByClassName('to-copy')[0];
-    console.log(toCopy, par);
+    //console.log(toCopy, par);
     toCopy.value = newValue;
     //console.log(toCopy.value.length,newValue.length,str,str[0],str[1]);
 
-    toCopy.textContent = str;
-    var selection = document.getSelection(),
-        range = document.createRange();
-    //  range.selectNodeContents(textarea);
-    range.selectNode(toCopy);
-    selection.removeAllRanges();
-    selection.addRange(range);
+    // toCopy.textContent = str;
+    // var selection = document.getSelection(),
+    //     range = document.createRange();
+    // //  range.selectNodeContents(textarea);
+    // range.selectNode(toCopy);
+    // selection.removeAllRanges();
+    // selection.addRange(range);
     toCopy.classList.add('show');
+    toCopy.select();
     var successful = document.execCommand('copy'); 
     toCopy.classList.remove('show');
     //console.log('successful',successful, str)

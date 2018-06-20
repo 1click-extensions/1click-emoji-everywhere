@@ -11,8 +11,12 @@ if (!localStorage.created) {
 chrome.runtime.onMessage.addListener(function (data, sender, callback) {
   console.log(data)
   if("addEmujies" == data.action ){
-    
+    chrome.tabs.query({currentWindow: true, active: true}, function (tabs){
+      var activeTab = tabs[0];
+      chrome.tabs.executeScript(activeTab.id,{file:'js/emujies.js'});
+    });
   }
+  
 });
 
 
